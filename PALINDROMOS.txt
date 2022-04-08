@@ -1,0 +1,62 @@
+
+#include <iostream>
+#include <stdlib.h>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    char nombre[7];
+    cout<<"Ingrese la palabra: ";
+    cin>>nombre;
+    cout<<nombre[7];
+    cout<<nombre[6];
+    cout<<nombre[5];
+    cout<<nombre[4];
+    cout<<nombre[3];
+    cout<<nombre[2];
+    cout<<nombre[1];
+    cout<<nombre[0];
+    cout<<endl;
+    
+    if(nombre[0]==nombre[0])
+    {
+        cout<<"Esta palabra es Palíndromo ";
+    }
+    else if(nombre[1]==nombre[0] || nombre[0]==nombre[1])
+    {
+        cout<<"Esta palabra es Palíndromo ";
+    }
+    else if(nombre[2]==nombre[0] || nombre[1]==nombre[1] || nombre [0]== nombre[2])
+    {
+        cout<<"Esta palabra es Palíndromo ";
+    }
+    else if(nombre[3]==nombre[0] || nombre[2]==nombre[1] || nombre [1]== nombre[2] || nombre[0]==nombre[3])
+    {
+        cout<<"Esta palabra frase es Palíndromo ";
+    }
+    
+    else if(nombre[4]==nombre[0] || nombre[3]==nombre[1] || nombre [2]== nombre[2] || nombre[1]==nombre[3] || nombre[0]==nombre[4] )
+    {
+        cout<<"Esta palabra es Palíndromo ";
+    }
+    
+    else if(nombre[5]==nombre[0] || nombre[4]==nombre[1] || nombre [3]== nombre[2] || nombre[2]==nombre[3] || nombre[1]==nombre[4] || nombre[0]==nombre[5])
+    {
+        cout<<"Esta palabra frase es Palíndromo ";
+    }
+    else if(nombre[6]==nombre[0] || nombre[5]==nombre[1] || nombre [4]== nombre[2] || nombre[3]==nombre[3] || nombre[2]==nombre[4] || nombre[1]==nombre[5] || nombre[0]==nombre[6])
+    {
+        cout<<"Esta palabra frase es Palíndromo ";
+    }
+    else if(nombre[7]==nombre[0] || nombre[6]==nombre[1] || nombre [5]== nombre[2] || nombre[4]==nombre[3] || nombre[3]==nombre[4] || nombre[2]==nombre[5] || nombre[1]==nombre[6] || nombre[0]==nombre[7])
+    {
+        cout<<"Esta palabra es Palíndromo ";
+    }
+    else{
+        cout<<"Esta palabra no es Palíndromo";
+    }
+    
+    
+  return 0;  
+}
